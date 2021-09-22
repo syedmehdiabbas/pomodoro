@@ -5,7 +5,7 @@ const image = document.querySelector(".image");
 const muted = document.querySelector(".muted");
 const stop = document.querySelector(".stop");
 const stopbtn = document.querySelector(".stop-btn");
-const sound = new Audio("sound.wav");
+const sound = new Audio("sound/sound.wav");
 
 const STUDYTIME = 25 * 60;
 const RESTTIME = 5 * 60;
@@ -41,10 +41,10 @@ stop.addEventListener("click", () => {
 
 function study() {
   completed.style.width = "0px";
-  studyTime = STUDYTIME;
+  let studyTime = STUDYTIME;
   count += 1;
-  sprint.innerHTML = `You're on round ${count}  Keep going`;
-  image.src = "reading.svg";
+  sprint.innerHTML = `You're on round <strong>${count}</strong><br>Keep going`;
+  image.src = "images/reading.svg";
   let id = setInterval(() => {
     if (studyTime === 0) {
       dis.innerHTML = "Time to relax now";
@@ -73,8 +73,8 @@ function rest() {
     dis.innerHTML = "Well done, you have completed 4 rounds";
   }
   completed.style.width = "0px";
-  restTime = RESTTIME;
-  image.src = "resting.svg";
+  let restTime = RESTTIME;
+  image.src = "images/resting.svg";
   let id = setInterval(() => {
     if (restTime === 0) {
       dis.innerHTML = "Lets go again!!";

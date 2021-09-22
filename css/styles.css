@@ -44,6 +44,10 @@ body {
   font-style: bolder;
 }
 
+.sprint {
+  text-align: center;
+}
+
 .image {
   width: 100px;
   height: 100px;
