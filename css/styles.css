@@ -28,7 +28,7 @@ body {
 .meter {
   width: 80vw;
   border: 3px solid var(--tertiary);
-  height: 10vw;
+  height: 5vw;
 }
 
 .completed {
@@ -120,5 +120,13 @@ footer {
 @media only screen and (max-width: 999px) {
   .heading {
     font-size: 15vw;
+  }
+
+  .sprint {
+    display: none;
+  }
+
+  footer {
+    font-size: 3vw;
   }
 }
