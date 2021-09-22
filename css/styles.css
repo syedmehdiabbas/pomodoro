@@ -21,14 +21,14 @@ body {
 }
 
 .muted {
-  font-size: 12px;
+  font-size: 10vw;
   color: #afaffc;
 }
 
 .meter {
-  width: 80%;
+  width: 80vw;
   border: 1px solid var(--tertiary);
-  height: 10px;
+  height: 10vw;
 }
 
 .completed {
@@ -39,7 +39,7 @@ body {
 }
 
 .dis {
-  font-size: 2.75rem;
+  font-size: 25vw;
   font-style: bolder;
 }
 
@@ -48,8 +48,8 @@ body {
 }
 
 .image {
-  width: 30vw;
-  height: 30vw;
+  width: 50vw;
+  height: 50vw;
   border-radius: 50%;
 }
 
@@ -68,8 +68,8 @@ footer {
 
 .stop-btn {
   display: none;
-  height: 40px;
-  width: 40px;
+  height: 15vw;
+  width: 15vw;
   color: #fff;
 }
 
@@ -92,5 +92,29 @@ footer {
 
   .dis {
     font-size: 4rem;
+  }
+
+  .container {
+    justify-content: space-evenly;
+  }
+
+  .image {
+    width: 150px;
+    height: 150px;
+  }
+
+  .muted {
+    font-size: 12px;
+  }
+
+  .stop-btn {
+    height: 40px;
+    width: 40px;
+  }
+}
+
+@media only screen and (max-width: 999px) {
+  .heading {
+    font-size: 15vw;
   }
 }
