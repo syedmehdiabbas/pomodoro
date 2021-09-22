@@ -17,9 +17,11 @@ function start(e) {
   if (e.keyCode == 32 && e.target == document.body && startFlag === false) {
     e.preventDefault();
     muted.innerHTML = "";
+    muted.style.display = "none";
     study();
   } else if (e.target == image && startFlag === false) {
     muted.innerHTML = "";
+    muted.style.display = "none";
     study();
   } else if (
     e.keyCode == 32 &&
