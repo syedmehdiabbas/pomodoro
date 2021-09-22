@@ -21,13 +21,13 @@ body {
 }
 
 .muted {
-  font-size: 10vw;
+  font-size: 7vw;
   color: #afaffc;
 }
 
 .meter {
   width: 80vw;
-  border: 1px solid var(--tertiary);
+  border: 3px solid var(--tertiary);
   height: 10vw;
 }
 
@@ -39,7 +39,7 @@ body {
 }
 
 .dis {
-  font-size: 25vw;
+  font-size: 20vw;
   font-style: bolder;
 }
 
@@ -110,6 +110,10 @@ footer {
   .stop-btn {
     height: 40px;
     width: 40px;
+  }
+
+  .meter {
+    height: 10px;
   }
 }
 
